@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriPick: Pesticide Recommendation App</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://images.pexels.com/photos/2165688/pexels-photo-2165688.jpeg?auto=compress&cs=tinysrgb&w=600.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-size: cover;
+      background-color: rgba(255, 255, 255, 0.9);
+
+    }
+
+    header {
+      background-color: rgba(59, 122, 87, 0.9);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 4px solid rgba(45, 92, 59, 0.9);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+
+    .section {
+      background: rgba(255, 255, 255, 0.9);
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .section h2 {
+      color: #3b7a57;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+
+    .section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group input, .form-group select, .form-group button {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-top: 5px;
+    }
+
+    .form-group button {
+      background-color: #3b7a57;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .form-group button:hover {
+      background-color: #2d5c3b;
+    }
+
+    .store-locator {
+      background-color: rgba(241, 248, 233, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .store-locator button {
+      background-color: #3b7a57;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .store-locator button:hover {
+      background-color: #2d5c3b;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>AgriPick</h1>
+  <p>Your Guide to Sustainable Pesticide Management</p>
+</header>
+
+<div class="container">
+
+  <!-- Pesticide Recommendation Section -->
+  <section class="section">
+    <h2>Pesticide Recommendations</h2>
+    <form id="recommendationForm">
+      <div class="form-group">
+        <label for="region">Region:</label>
+        <select id="region" name="region" required>
+          <option value="">Select Region</option>
+          <option value="north">North</option>
+          <option value="south">South</option>
+          <option value="east">East</option>
+          <option value="west">West</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="season">Season:</label>
+        <select id="season" name="season" required>
+          <option value="">Select Season</option>
+          <option value="summer">Summer</option>
+          <option value="monsoon">Monsoon</option>
+          <option value="winter">Winter</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="soil">Soil Type:</label>
+        <select id="soil" name="soil" required>
+          <option value="">Select Soil Type</option>
+          <option value="clay">Clay</option>
+          <option value="sandy">Sandy</option>
+          <option value="loam">Loam</option>
+          <option value="silt">Silt</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <button type="submit">Get Recommendations</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Guidance Section -->
+  <section class="section">
+    <h2>Best Practices & Guidance</h2>
+    <p>Access expert tips on proper pesticide application, safety guidelines, and more to ensure sustainable and safe crop protection.</p>
+    <button onclick="alert('Best Practices Guidance Coming Soon')">View Guidance</button>
+  </section>
+
+  <!-- Nearby Store Locator Section -->
+  <section class="section store-locator">
+    <h2>Find Nearby Stores</h2>
+    <p>Locate the nearest stores with the most affordable pesticide prices.</p>
+    <button onclick="alert('Store Locator Feature Coming Soon')">Find Stores</button>
+  </section>
+
+</div>
+
+</body>
+</html>
